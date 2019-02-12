@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// import { FlexLayoutModule } from '@angular/flex-layout';
 import { 
   // MatAutocompleteModule,
   // MatBadgeModule,
@@ -29,7 +30,7 @@ import {
   // MatRadioModule,
   // MatRippleModule,
   // MatSelectModule,
-  // MatSidenavModule,
+  MatSidenavModule,
   // MatSliderModule,
   // MatSlideToggleModule,
   // MatSnackBarModule,
@@ -44,7 +45,6 @@ import {
 from '@angular/material';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { MenuComponent } from './components/menu/menu.component';
 
 
@@ -54,12 +54,12 @@ import { MenuComponent } from './components/menu/menu.component';
     HomeComponent,
     AboutComponent,
     MenuComponent,
-    SidebarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    // FlexLayoutModule,
     // MatAutocompleteModule,
     // MatBadgeModule,
     // MatBottomSheetModule,
@@ -84,7 +84,7 @@ import { MenuComponent } from './components/menu/menu.component';
     // MatRadioModule,
     // MatRippleModule,
     // MatSelectModule,
-    // MatSidenavModule,
+    MatSidenavModule,
     // MatSliderModule,
     // MatSlideToggleModule,
     // MatSnackBarModule,

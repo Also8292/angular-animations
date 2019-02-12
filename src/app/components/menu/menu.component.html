@@ -1,6 +1,7 @@
-<mat-toolbar color="primary">  
+<mat-toolbar color="primary" class="main-menu">  
   <mat-toolbar-row class="toolbar-row">
-    <button class="menu-hamburger" mat-button="" title="Docs menu" (click)="changeState()">
+    
+    <button class="menu-hamburger" mat-button="" title="Sidebar" (click)="changeState()">
       <span class="mat-button-wrapper">
         <mat-icon class="mat-icon" role="img" svgicon="menu" aria-hidden="true">
           <svg focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -11,5 +12,17 @@
       <div class="mat-button-ripple mat-ripple" matripple=""></div>
       <div class="mat-button-focus-overlay"></div>
     </button>
+
+
   </mat-toolbar-row>
 </mat-toolbar>
+
+<mat-sidenav-container class="sidebar page-component" [@sidebareEffect]=currentState (click)="changeState()">
+  <button mat-button routerLink="/home">HOME</button>
+  <button mat-button routerLink="/about">ABOUT</button>
+  <button mat-button routerLink="/home">HOME</button>
+  <button mat-button routerLink="/about">ABOUT</button>
+</mat-sidenav-container>
+
+
+
