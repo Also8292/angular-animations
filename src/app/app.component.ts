@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'animation';
+
+
+  // darkBody() {
+  //   // if(this.currentState = 'final') {
+  //   //   this.currentState = 'initial';
+  //   // }
+  //   console.log("Body clicked");
+    
+  // }
 }

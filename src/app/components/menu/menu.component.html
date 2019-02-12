@@ -1,0 +1,6 @@
+<button mat-button class="menu-hamburger" (click)="changeState()">&#9776;</button>
+
+<div class="sidebar" [@sidebareEffect]=currentState>
+  <button mat-button routerLink="/home">HOME</button>
+  <button mat-button routerLink="/about">ABOUT</button>
+</div>
