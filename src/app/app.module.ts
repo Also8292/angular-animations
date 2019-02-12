@@ -37,13 +37,14 @@ import {
   // MatStepperModule,
   // MatTableModule,
   // MatTabsModule,
-  // MatToolbarModule,
+  MatToolbarModule,
   // MatTooltipModule,
   // MatTreeModule,
 }
 from '@angular/material';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { MenuComponent } from './components/menu/menu.component';
 
 
@@ -52,7 +53,8 @@ import { MenuComponent } from './components/menu/menu.component';
     AppComponent,
     HomeComponent,
     AboutComponent,
-    MenuComponent
+    MenuComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
@@ -90,7 +92,7 @@ import { MenuComponent } from './components/menu/menu.component';
     // MatStepperModule,
     // MatTableModule,
     // MatTabsModule,
-    // MatToolbarModule,
+    MatToolbarModule,
     // MatTooltipModule,
     // MatTreeModule,
 

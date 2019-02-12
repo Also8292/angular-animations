@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
+import { SidebarComponent } from '../sidebar/sidebar.component';
 
 @Component({
   selector: 'app-menu',
@@ -20,17 +21,17 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 })
 export class MenuComponent {
 
-  constructor() { }
+  constructor(public sidebar: SidebarComponent) { }
+  // currentState = 'initial';
 
-  // ngOnInit() {
-  // }
+  // sidebar: SidebarComponent;
 
 
-  currentState = 'initial';
+  // sidebar.currentState = 'final';
 
-  sb = document.querySelector('body');
 
   changeState() {
-    this.currentState = this.currentState === 'initial' ? 'final' : 'initial';
+    this.sidebar.currentState = "initial";
   }
+
 }
