@@ -4,3 +4,23 @@
 
 html, body { padding: 0 }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; overflow: hidden; }
+
+.move-container1 {
+    left: 25%;
+    animation: moveToRight 0.8s ease;
+}
+
+.move-container2 {
+    left: 0;
+    animation: moveToLeft 0.8s ease;
+}
+
+
+@keyframes moveToRight {
+    from { left: 0 }
+    to { left: 25%}
+}
+@keyframes moveToLeft {
+    from { left: 25% }
+    to { left: 0 }
+}

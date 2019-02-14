@@ -46,6 +46,8 @@ from '@angular/material';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { MenuComponent } from './components/menu/menu.component';
+// import { Animations } from './animation';
+
 
 
 @NgModule({
@@ -97,7 +99,7 @@ import { MenuComponent } from './components/menu/menu.component';
     // MatTreeModule,
 
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [ ],
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

@@ -1,42 +1,29 @@
-import { Component } from '@angular/core';
-import { trigger, state, style, animate, transition } from '@angular/animations';
+import { Component, ViewChild, Output } from '@angular/core';
+import { Animations } from 'src/app/animation';
+import { EventEmitter } from 'protractor';
 
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.css'],
   animations: [
-    trigger('sidebareEffect', [
-      state('initial', style({
-        left: '*'
-      })),
-      state('final', style({
-        left: '0'
-      })),
-      transition('final=>initial', animate('500ms')),
-      transition('initial=>final', animate('500ms'))
-    ]),
-    trigger('sidebarEntrance', [
-      transition(':enter', [
-        style({ opacity: 0 }),
-        animate('1s', style({ opacity: 1 })),
-      ]),
-      transition(':leave', [
-        animate('1s', style({ opacity: 0 }))
-      ])
-    ])
+    Animations.sidebareEffect,
+    Animations.sidebarEntrance
   ]
 })
 export class MenuComponent {
 
-  constructor() {
-    console.log(window.innerWidth);
+  constructor() { }
 
-  }
-
-  currentState = 'initial';
+  currentState = 'out';
 
   changeState() {
-    this.currentState = this.currentState === 'initial' ? 'final' : 'initial';
+    this.currentState = this.currentState === 'out' ? 'in' : 'out';
+    // console.log(this.currentState);
+  }
+
+  test() {
+    console.log("HELLO ALSO");
+    
   }
 }
