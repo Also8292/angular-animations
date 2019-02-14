@@ -8,7 +8,7 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   animations: [
     trigger('sidebareEffect', [
       state('initial', style({
-        left: '-100%'
+        left: '*'
       })),
       state('final', style({
         left: '0'
